@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+	<center class="center">
+		<img id="loadingimage" width="300">
+		<div>
+			Please wait
+		</div>
+	</center>
+	<script>
+		let pics = [
+			'image/kermit.gif',
+			'image/pen.gif',
+			'image/typewriter.gif',
+			'image/writer.gif',
+		];
+		let pic = document.getElementById('loadingimage');
+		pic.src = pics[Math.floor(Math.random()*pics.length)];;
+	</script>
+</body>
+</html>
